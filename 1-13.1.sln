@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalkulal", "Kalkulal\Kalkulal.csproj", "{ACF47531-4B87-48F0-81D4-E47B63C1E135}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mtable", "Mtable\Mtable.csproj", "{092EBEA6-CE83-4FDB-BB02-7E015641F126}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mtable2", "Mtable2\Mtable2.csproj", "{CA133C88-F63E-4BAC-9A66-1E707D04DCAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{ACF47531-4B87-48F0-81D4-E47B63C1E135}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACF47531-4B87-48F0-81D4-E47B63C1E135}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACF47531-4B87-48F0-81D4-E47B63C1E135}.Release|Any CPU.Build.0 = Release|Any CPU
+		{092EBEA6-CE83-4FDB-BB02-7E015641F126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{092EBEA6-CE83-4FDB-BB02-7E015641F126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{092EBEA6-CE83-4FDB-BB02-7E015641F126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{092EBEA6-CE83-4FDB-BB02-7E015641F126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA133C88-F63E-4BAC-9A66-1E707D04DCAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA133C88-F63E-4BAC-9A66-1E707D04DCAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA133C88-F63E-4BAC-9A66-1E707D04DCAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA133C88-F63E-4BAC-9A66-1E707D04DCAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
