@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mtable", "Mtable\Mtable.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mtable2", "Mtable2\Mtable2.csproj", "{CA133C88-F63E-4BAC-9A66-1E707D04DCAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoPapirOllo", "KoPapirOllo\KoPapirOllo.csproj", "{8F467AB8-FE83-4E78-8932-444EA62C98A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{CA133C88-F63E-4BAC-9A66-1E707D04DCAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA133C88-F63E-4BAC-9A66-1E707D04DCAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA133C88-F63E-4BAC-9A66-1E707D04DCAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F467AB8-FE83-4E78-8932-444EA62C98A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F467AB8-FE83-4E78-8932-444EA62C98A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F467AB8-FE83-4E78-8932-444EA62C98A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F467AB8-FE83-4E78-8932-444EA62C98A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
