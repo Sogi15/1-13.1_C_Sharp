@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KoPapirOllo", "KoPapirOllo\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2022_02_08_helyettesites", "2022_02_08_helyettesites\2022_02_08_helyettesites.csproj", "{596D61E3-17BC-4F35-A6E3-F3EADFC19C64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szamkitalalo", "szamkitalalo\szamkitalalo.csproj", "{839CC819-F899-4AB6-9D29-10EF32A5B171}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{596D61E3-17BC-4F35-A6E3-F3EADFC19C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{596D61E3-17BC-4F35-A6E3-F3EADFC19C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{596D61E3-17BC-4F35-A6E3-F3EADFC19C64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{839CC819-F899-4AB6-9D29-10EF32A5B171}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{839CC819-F899-4AB6-9D29-10EF32A5B171}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{839CC819-F899-4AB6-9D29-10EF32A5B171}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{839CC819-F899-4AB6-9D29-10EF32A5B171}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
