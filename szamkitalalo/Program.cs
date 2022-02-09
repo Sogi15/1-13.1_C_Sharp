@@ -13,6 +13,8 @@ namespace szamkitalalo
             //Változók
             int alsohatar = 1, //Véletlen szám alsó határa
                 felsohatar = 100, //Véletlen szám felső határa
+                gondoltszam,
+                tipp,
                 probal = 5; //Próbálkozások maximális száma
             
             Random rnd = new Random();
@@ -24,13 +26,15 @@ namespace szamkitalalo
                 Console.WriteLine("Leszel az aki gondol egy számra? (i/n)");
                 if (Console.ReadKey(true).KeyChar == 'n')
                 {
-                //Ha a játékos a kitaláló
-                //A gép gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
-                //tipp beírása
-                //ha nagyobb a tipp.
-                //Ha kisebb a tipp.
-                //ha pontos a tipp.
-                //ha k/n akkor uj tipp iras
+                    //Ha a játékos a kitaláló
+                    //Gep generalja a szamot
+                    gondoltszam = rnd.Next(alsohatar, felsohatar);
+                    //A gép gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
+                    for (int i = 0; i < probal; i++)
+                    {
+                        //tipp beolvasas
+                        tipp = int.Parse(Console.ReadLine());
+                    }
                 }
                 else
                 {
