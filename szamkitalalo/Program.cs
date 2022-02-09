@@ -10,92 +10,44 @@ namespace szamkitalalo
     {
         static void Main(string[] args)
         {
-            Random r = new Random();
-            int x = 50;
-            int i = 0;
-            int min = 0;
-            int max = 100;
-            int number = r.Next(100);
-        START:
+            //Változók
+            int alsohatar = 1, //Véletlen szám alsó határa
+                felsohatar = 100, //Véletlen szám felső határa
+                probal = 5; //Próbálkozások maximális száma
             
-            Console.WriteLine("Válassz játékmódot!");
-            Console.WriteLine("1 - Te gondolsz egy számra");
-            Console.WriteLine("2 - A számítógép gondol egy számra");
-            
-            switch (Console.ReadKey(true).KeyChar)
-            {
-                case '1': goto PLAYER;
-                case '2': goto COMPUTER;
-            }
+            Random rnd = new Random();
 
-        PLAYER:
-            Console.WriteLine("Gondolj egy számra! (1 - 100)");
-            Console.ReadLine();
-            while (i < 5)
+            //Játék ismétlése
+            do
             {
-                Console.WriteLine("A számítógép szerint a szám {0}", x);
-                Console.WriteLine("Szerinted? (k/n/e)");
-                switch (Console.ReadKey(true).KeyChar)
+                //Megkérdezem, hogy ki lesz a kitaláló
+                Console.WriteLine("Leszel az aki gondol egy számra? (i/n)");
+                if (Console.ReadKey(true).KeyChar == 'n')
                 {
-                    case 'k':
-                        if (i == 3)
-                            x = r.Next(min, x);
-                        else
-                        {
-                            max = x;
-                            x -= (max - min) / 2;
-                        }
-                        break;
-                    case 'n':
-                        if (i == 3)
-                            x = r.Next(x + 1, max);
-                        else
-                        {
-                            min = x;
-                            x += (max - min) / 2;
-                        }
-                        break;
-                    case 'e':
-                        Console.WriteLine("A számítógép nyert!");
-                        goto END;
-                }
-                ++i;
-            }
-            Console.WriteLine("A számítógép nem tudta kitalálni a számot.");
-            goto END;
-
-
-        COMPUTER:
-            while (i < 5)
-            {
-                Console.WriteLine("\nA tipped: ");
-                x = int.Parse(Console.ReadLine());
-                if (x < number)
-                {
-                    Console.WriteLine("A szám ennél nagyobb!");
-                }
-                else if(x > number)
-                {
-                    Console.WriteLine("A szám ennél kisebb!");
+                //Ha a játékos a kitaláló
+                //A gép gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
+                //tipp beírása
+                //ha nagyobb a tipp.
+                //Ha kisebb a tipp.
+                //ha pontos a tipp.
+                //ha k/n akkor uj tipp iras
                 }
                 else
-                { Console.WriteLine("Nyertél!");
-                    goto END;
+                {
+                //Ha a gép a kitaláló
+                //A Játékos gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
+                //szám meghatározása
+                //ha nagyobb a tipp.
+                //Ha kisebb a tipp.
+                //ha pontos a tipp.
+                //ha k/n akkor uj tipp kiertekeles
                 }
-                ++i;
-            }
-            Console.WriteLine("\nVesztettél, a szám {0} volt.", number);
-        goto END;
+                //kérdés h akarsz-e újra játszani
+                Console.WriteLine("Folytatjuk a játékot? (i/n)");
+            } while (Console.ReadKey(true).KeyChar == 'i');
+            // sor kiirtekeles
+            Console.ReadKey();
 
-        END:
-            Console.WriteLine("\nAkarsz még játszani? i/n");
-
-            switch (Console.ReadKey(true).KeyChar)
-            {
-                case 'i': goto START;
-                case 'n': break;
-                default: goto END;
-            }
         }
     }
 }
