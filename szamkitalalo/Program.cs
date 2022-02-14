@@ -23,17 +23,33 @@ namespace szamkitalalo
             do
             {
                 //Megkérdezem, hogy ki lesz a kitaláló
-                Console.WriteLine("Leszel az aki gondol egy számra? (i/n)");
+                Console.WriteLine("Leszel az, aki gondol egy számra? (i/n)");
                 if (Console.ReadKey(true).KeyChar == 'n')
                 {
                     //Ha a játékos a kitaláló
                     //Gep generalja a szamot
                     gondoltszam = rnd.Next(alsohatar, felsohatar);
                     //A gép gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
-                    for (int i = 0; i < probal; i++)
+                    for (int i = 0; i <= probal; i++)
                     {
                         //tipp beolvasas
                         tipp = int.Parse(Console.ReadLine());
+                        //Kiértékelem a tippet
+                        //ha nagyobb a tipp
+                        if (gondoltszam < tipp)
+                        {
+                            Console.WriteLine("Kisebb számra gondoltam");
+                        }
+                        //Ha kisebb a tipp.
+                        else if (gondoltszam > tipp)
+                        {
+                            Console.WriteLine("Nagyobb számra gondoltam");
+                        }
+                        //ha pontos a tipp.
+                        else
+                        {
+                            Console.WriteLine("Gratulálok, eltaláltad");
+                        }
                     }
                 }
                 else
