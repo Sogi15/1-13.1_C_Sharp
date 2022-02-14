@@ -12,7 +12,9 @@ namespace szamkitalalo
         {
             //Változók
             int alsohatar = 1, //Véletlen szám alsó határa
-                felsohatar = 100, //Véletlen szám felső határa
+                felsohatar = 11, //Véletlen szám felső határa
+                tippalsohatar,
+                tippfelsohatar,
                 gondoltszam,
                 tipp,
                 probal = 5; //Próbálkozások maximális száma
@@ -24,15 +26,15 @@ namespace szamkitalalo
             {
                 //Megkérdezem, hogy ki lesz a kitaláló
                 Console.WriteLine("Leszel az, aki gondol egy számra? (i/n)");
-                if (Console.ReadKey(true).KeyChar == 'n')
+                if (Console.ReadKey().KeyChar == 'n')
                 {
-                    //Ha a játékos a kitaláló
-                    //Gep generalja a szamot
+                    //Ha a játékos a kitaláló akkor a Gep generalja a szamot
                     gondoltszam = rnd.Next(alsohatar, felsohatar);
                     //A gép gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
                     for (int i = 0; i <= probal; i++)
                     {
                         //tipp beolvasas
+                        Console.WriteLine("\nTippeljen!");
                         tipp = int.Parse(Console.ReadLine());
                         //Kiértékelem a tippet
                         //ha nagyobb a tipp
@@ -49,21 +51,38 @@ namespace szamkitalalo
                         else
                         {
                             Console.WriteLine("Gratulálok, eltaláltad");
+                            break;
                         }
                     }
                 }
+                //Ha a gép a kitaláló         
                 else
                 {
-                //Ha a gép a kitaláló
-                //A Játékos gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
-                //szám meghatározása
-                //ha nagyobb a tipp.
-                //Ha kisebb a tipp.
-                //ha pontos a tipp.
-                //ha k/n akkor uj tipp kiertekeles
-                }
+                        //a gép tippjének meghatározása
+                        Console.WriteLine("\nTippeljen!");
+                        tipp = int.Parse(Console.ReadLine());
+                        //Kiértékelem a tippet
+                        //ha nagyobb a tipp
+                        if (gondoltszam < tipp)
+                        {
+                            Console.WriteLine("Kisebb számra gondoltam");
+                        }
+                        //Ha kisebb a tipp.
+                        else if (gondoltszam > tipp)
+                        {
+                            Console.WriteLine("Nagyobb számra gondoltam");
+                        }
+                        //ha pontos a tipp.
+                        else
+                        {
+                            Console.WriteLine("Gratulálok, eltaláltad");
+                            break;
+                        }
+                        //A Játékos gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
+                        //ha k/n akkor uj tipp kiertekeles
+                    }
                 //kérdés h akarsz-e újra játszani
-                Console.WriteLine("Folytatjuk a játékot? (i/n)");
+                Console.WriteLine("\nFolytatjuk a játékot? (i/n)");
             } while (Console.ReadKey(true).KeyChar == 'i');
             // sor kiirtekeles
             Console.ReadKey();
