@@ -58,9 +58,9 @@ namespace szamkitalalo
                 //Ha a gép a kitaláló         
                 else
                 {
-                        //a gép tippjének meghatározása
-                        Console.WriteLine("\nTippeljen!");
-                        tipp = int.Parse(Console.ReadLine());
+                    //a gép tippjének meghatározása
+                    Console.WriteLine("\nTippeljen!");
+                    tipp = int.Parse(Console.ReadLine());
                         //Kiértékelem a tippet
                         //ha nagyobb a tipp
                         if (gondoltszam < tipp)
@@ -80,7 +80,7 @@ namespace szamkitalalo
                         }
                         //A Játékos gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
                         //ha k/n akkor uj tipp kiertekeles
-                    }
+                }
                 //kérdés h akarsz-e újra játszani
                 Console.WriteLine("\nFolytatjuk a játékot? (i/n)");
             } while (Console.ReadKey(true).KeyChar == 'i');
