@@ -17,8 +17,15 @@ namespace szamkitalalo
                 tippfelsohatar,
                 gondoltszam,
                 tipp,
-                probal = 5; //Próbálkozások maximális száma
-            
+                probal = 5; //Próbálkozások maximális száma;
+                            /* k = Kisebbre gondoltam
+                               n = nagyobbra gondoltam
+                               t = eltalálta */
+
+            char valaszom; // A gép tippjére adott válaszom
+
+            bool eltalalta = false; // a gép eltalálta-e a tippet
+
             Random rnd = new Random();
 
             //Játék ismétlése
@@ -58,28 +65,27 @@ namespace szamkitalalo
                 //Ha a gép a kitaláló         
                 else
                 {
+                    for (int i = 0; 1 <= probal; i++)
+                    {
                     //a gép tippjének meghatározása
                     Console.WriteLine("\nTippeljen!");
                     tipp = int.Parse(Console.ReadLine());
-                        //Kiértékelem a tippet
-                        //ha nagyobb a tipp
-                        if (gondoltszam < tipp)
-                        {
-                            Console.WriteLine("Kisebb számra gondoltam");
-                        }
-                        //Ha kisebb a tipp.
-                        else if (gondoltszam > tipp)
-                        {
-                            Console.WriteLine("Nagyobb számra gondoltam");
-                        }
-                        //ha pontos a tipp.
-                        else
-                        {
-                            Console.WriteLine("Gratulálok, eltaláltad");
-                            break;
-                        }
-                        //A Játékos gondol egy számot és a játékosnak kell kitalálni, max 5 próbálkozás.
-                        //ha k/n akkor uj tipp kiertekeles
+                    //Kiértékelem a tippet megadom a választ
+                    valaszom = Console.ReadKey().KeyChar;
+                    if (valaszom == 'n')
+                    {
+                        Console.WriteLine("Nagyobbra gondoltam!");
+                    }
+                    else if (valaszom == 'k')
+                    {
+                        Console.WriteLine("Kisebbre gondoltam!");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Gratulálok eltalálta");
+                        break;
+                    }
+                    }
                 }
                 //kérdés h akarsz-e újra játszani
                 Console.WriteLine("\nFolytatjuk a játékot? (i/n)");
