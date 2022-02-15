@@ -65,27 +65,43 @@ namespace szamkitalalo
                 //Ha a gép a kitaláló         
                 else
                 {
+                    //megadom a kezdeti értéket
+                    eltalalta = false;
+                    //tipp határainak meghatározása
+                    tippalsohatar = alsohatar;
+                    tippfelsohatar = felsohatar;
+                    //a gép tippel
                     for (int i = 0; 1 <= probal; i++)
                     {
                     //a gép tippjének meghatározása
                     Console.WriteLine("\nTippeljen!");
-                    tipp = int.Parse(Console.ReadLine());
+                    tipp = (tippfelsohatar - tippfelsohatar) / 2;
                     //Kiértékelem a tippet megadom a választ
                     valaszom = Console.ReadKey().KeyChar;
                     if (valaszom == 'n')
                     {
                         Console.WriteLine("Nagyobbra gondoltam!");
+                        tippalsohatar = tipp;
                     }
                     else if (valaszom == 'k')
                     {
                         Console.WriteLine("Kisebbre gondoltam!");
+                            tippfelsohatar = tipp;
                     }
                     else
                     {
+                        eltalalta = true;
                         Console.WriteLine("Gratulálok eltalálta");
                         break;
                     }
                     }
+                    // kiirom nem találta el, ha nem találta el 5.re
+                    if (!eltalalta)
+                    {
+                    Console.WriteLine("Sajnos nem találta el!");
+                    }
+                    Console.ReadKey();
+
                 }
                 //kérdés h akarsz-e újra játszani
                 Console.WriteLine("\nFolytatjuk a játékot? (i/n)");
