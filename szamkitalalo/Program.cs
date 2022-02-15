@@ -74,24 +74,25 @@ namespace szamkitalalo
                     for (int i = 0; 1 <= probal; i++)
                     {
                     //a gép tippjének meghatározása
-                    Console.WriteLine("\nTippeljen!");
+                    Console.WriteLine("\nGondolj egy számra!");
                     tipp = (tippfelsohatar - tippfelsohatar) / 2;
-                    //Kiértékelem a tippet megadom a választ
-                    valaszom = Console.ReadKey().KeyChar;
+                     Console.WriteLine("\nPC: A tippem: (0)",tipp);
+                        //Kiértékelem a tippet megadom a választ
+                        valaszom = Console.ReadKey().KeyChar;
                     if (valaszom == 'n')
                     {
-                        Console.WriteLine("Nagyobbra gondoltam!");
+                        Console.WriteLine("\nNagyobbra gondoltam!");
                         tippalsohatar = tipp;
                     }
                     else if (valaszom == 'k')
                     {
-                        Console.WriteLine("Kisebbre gondoltam!");
+                        Console.WriteLine("\nKisebbre gondoltam!");
                             tippfelsohatar = tipp;
                     }
                     else
                     {
                         eltalalta = true;
-                        Console.WriteLine("Gratulálok eltalálta");
+                        Console.WriteLine("\nGratulálok eltalálta");
                         break;
                     }
                     }
