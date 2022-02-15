@@ -12,7 +12,7 @@ namespace szamkitalalo
         {
             //Változók
             int alsohatar = 1, //Véletlen szám alsó határa
-                felsohatar = 11, //Véletlen szám felső határa
+                felsohatar = 100, //Véletlen szám felső határa
                 tippalsohatar,
                 tippfelsohatar,
                 gondoltszam,
@@ -71,12 +71,13 @@ namespace szamkitalalo
                     tippalsohatar = alsohatar;
                     tippfelsohatar = felsohatar;
                     //a gép tippel
-                    for (int i = 0; 1 <= probal; i++)
+                    Console.WriteLine("\nGondolj egy számra!");
+                    for (int i = 0; i <= probal; i++)
                     {
                     //a gép tippjének meghatározása
-                    Console.WriteLine("\nGondolj egy számra!");
-                    tipp = (tippfelsohatar - tippfelsohatar) / 2;
-                     Console.WriteLine("\nPC: A tippem: (0)",tipp);
+                    tipp = tippalsohatar + (tippfelsohatar - tippalsohatar) / 2;
+                     Console.WriteLine("\nPC: A tippem: {0}", tipp);
+                        Console.WriteLine("\nEltaláltam a számot? \nk = Kisebb a szám | n = nagyobb a szám | t = ez az a szám");
                         //Kiértékelem a tippet megadom a választ
                         valaszom = Console.ReadKey().KeyChar;
                     if (valaszom == 'n')
@@ -101,14 +102,12 @@ namespace szamkitalalo
                     {
                     Console.WriteLine("Sajnos nem találta el!");
                     }
-                    Console.ReadKey();
 
                 }
                 //kérdés h akarsz-e újra játszani
                 Console.WriteLine("\nFolytatjuk a játékot? (i/n)");
             } while (Console.ReadKey(true).KeyChar == 'i');
             // sor kiirtekeles
-            Console.ReadKey();
 
         }
     }
