@@ -12,6 +12,11 @@ namespace teszt_2022_02_15
         {
             int szam = 10;
             long nagyszam = 1500;
+
+            nagyszam = szam;
+            szam = (int)nagyszam;
+
+
         }
     }
 }
