@@ -33,6 +33,7 @@ namespace szamkitalalo
             {
                 //Megkérdezem, hogy ki lesz a kitaláló
                 Console.WriteLine("Leszel az, aki gondol egy számra? (i/n)");
+                eltalalta = false;b
                 if (Console.ReadKey().KeyChar == 'n')
                 {
                     //Ha a játékos a kitaláló akkor a Gep generalja a szamot
@@ -57,9 +58,14 @@ namespace szamkitalalo
                         //ha pontos a tipp.
                         else
                         {
+                            eltalalta = true;
                             Console.WriteLine("Gratulálok, eltaláltad");
                             break;
                         }
+                    }
+                    if (!eltalalta)
+                    {
+                        Console.WriteLine("Nem nyertél");
                     }
                 }
                 //Ha a gép a kitaláló         
