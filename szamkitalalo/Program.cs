@@ -33,7 +33,7 @@ namespace szamkitalalo
             {
                 //Megkérdezem, hogy ki lesz a kitaláló
                 Console.WriteLine("Leszel az, aki gondol egy számra? (i/n)");
-                eltalalta = false;b
+                eltalalta = false;
                 if (Console.ReadKey().KeyChar == 'n')
                 {
                     //Ha a játékos a kitaláló akkor a Gep generalja a szamot
