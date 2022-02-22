@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "termenyjoslas", "termenyjos
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ketponttavolsag", "ketponttavolsag\ketponttavolsag.csproj", "{70AA4C68-80A1-4432-939F-FE72D79182DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dinnye", "Dinnye\Dinnye.csproj", "{663EDF54-1E45-44F1-9B32-249924C10983}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{70AA4C68-80A1-4432-939F-FE72D79182DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70AA4C68-80A1-4432-939F-FE72D79182DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70AA4C68-80A1-4432-939F-FE72D79182DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{663EDF54-1E45-44F1-9B32-249924C10983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{663EDF54-1E45-44F1-9B32-249924C10983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{663EDF54-1E45-44F1-9B32-249924C10983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{663EDF54-1E45-44F1-9B32-249924C10983}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
