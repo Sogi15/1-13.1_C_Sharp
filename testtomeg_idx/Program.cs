@@ -48,7 +48,7 @@ namespace testtomeg_idx
             {
                 msg = "II. fokú elhízás";
             }
-            else if (tti >= 40)
+            else
             {
                 msg = "III. fokú (súlyos) elhízás";
             }
