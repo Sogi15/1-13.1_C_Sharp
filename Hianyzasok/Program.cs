@@ -18,28 +18,31 @@ namespace Hianyzasok
             string[] figyel = new string[] {"Figyelmeztetés","Osztályfőnöki intő","Igazgatói megrovás","Felfüggesztés"}; //intők
             Console.WriteLine("kérlek add meg hány nap igazolatlannal rendelkezel!");
             ig = int.Parse(Console.ReadLine()); //igazolatlan bekérés
-            if (ig >= 50)
-            {
-                figy = figyel[3];
-            }
-            else if (ig == 30)
-            {
-                figy = figyel[2];
-            }
-            else if (ig == 20)
-            {
-                figy = figyel[1];
-            }
-            else if (ig >= 11)
-            {
-                jegy = jegyek[0];
-            }
-            else if (ig >= 10)
+
+            if (ig >= 3)
             {
                 jegy = jegyek[1];
-                figy = figyel[0];
-                Console.WriteLine("Kérlek add meg a születési dátumodat!");
-                szd = Console.ReadLine();
+                if (ig >= 10)
+                {
+                    figy = figyel[0];
+                    Console.WriteLine("Kérlek add meg a születési dátumodat!");
+                    szd = Console.ReadLine();
+                    jegy = jegyek[0];
+                    if (ig >= 50)
+                    {
+                        figy = figyel[3];
+                        jegy = "Értékelhetetlen/Felfüggesztve";
+                    }
+                    else if (ig == 30)
+                    {
+                        figy = figyel[2];
+                    }
+                    else if (ig == 20)
+                    {
+                        figy = figyel[1];
+                    }
+                }
+
             }
             else if (ig == 1 || ig == 2)
             {
