@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "atlaghomerseklet", "atlagho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testtomeg_idx", "testtomeg_idx\testtomeg_idx.csproj", "{090B9C17-61BA-48E5-B14F-8396D2BB0EED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hianyzasok", "Hianyzasok\Hianyzasok.csproj", "{5786A7AB-7D0F-45E4-8A69-E94292AD5F7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{090B9C17-61BA-48E5-B14F-8396D2BB0EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{090B9C17-61BA-48E5-B14F-8396D2BB0EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{090B9C17-61BA-48E5-B14F-8396D2BB0EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5786A7AB-7D0F-45E4-8A69-E94292AD5F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5786A7AB-7D0F-45E4-8A69-E94292AD5F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5786A7AB-7D0F-45E4-8A69-E94292AD5F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5786A7AB-7D0F-45E4-8A69-E94292AD5F7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
