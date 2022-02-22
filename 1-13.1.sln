@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dinnye", "Dinnye\Dinnye.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csempezes", "csempezes\csempezes.csproj", "{8B8204E2-21ED-4C8D-B217-88C2E287B441}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "szamkiiras", "szamkiiras\szamkiiras.csproj", "{543B18FD-2322-418A-88D5-F5EA43464686}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{8B8204E2-21ED-4C8D-B217-88C2E287B441}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B8204E2-21ED-4C8D-B217-88C2E287B441}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B8204E2-21ED-4C8D-B217-88C2E287B441}.Release|Any CPU.Build.0 = Release|Any CPU
+		{543B18FD-2322-418A-88D5-F5EA43464686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{543B18FD-2322-418A-88D5-F5EA43464686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{543B18FD-2322-418A-88D5-F5EA43464686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{543B18FD-2322-418A-88D5-F5EA43464686}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
