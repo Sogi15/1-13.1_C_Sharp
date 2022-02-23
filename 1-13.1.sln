@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c_sharp_dolgozat2", "c_shar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c_sharp_dolgozat3", "c_sharp_dolgozat3\c_sharp_dolgozat3.csproj", "{C312AA5D-CD7D-46DA-A868-12C2AD749A42}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c_sharp_dolgozat4", "c_sharp_dolgozat4\c_sharp_dolgozat4.csproj", "{0B709474-EC61-44DA-95B8-9A562CDE000D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{C312AA5D-CD7D-46DA-A868-12C2AD749A42}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C312AA5D-CD7D-46DA-A868-12C2AD749A42}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C312AA5D-CD7D-46DA-A868-12C2AD749A42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B709474-EC61-44DA-95B8-9A562CDE000D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B709474-EC61-44DA-95B8-9A562CDE000D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B709474-EC61-44DA-95B8-9A562CDE000D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B709474-EC61-44DA-95B8-9A562CDE000D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
