@@ -15,20 +15,23 @@ namespace szamkiiras
                    szam2 = "",
                    szam3 = "",
                    szam4 = "";
-            
 
-            string[] ertek0 = new string[] { "tiz","húsz","harminc","negyven","ötven","hatvan","hetven","nyolcvan","kilencven"};
-            string[] ertek1 = new string[] { "nulla", "egy", "kettő", "három", "négy", "öt", "hat", "hét", "nyolc", "kilenc"};
+
+            string[] ertek0 = new string[] { "tiz", "húsz", "harminc", "negyven", "ötven", "hatvan", "hetven", "nyolcvan", "kilencven" };
+            string[] ertek1 = new string[] { "nulla", "egy", "kettő", "három", "négy", "öt", "hat", "hét", "nyolc", "kilenc" };
             string[] ertek2 = new string[] { "tizen", "huszon", "harminc", "negyven", "ötven", "hatvan", "hetven", "nyolcvan", "kilencven" };
-            string[] ertek3 = new string[] { "száz", "kétszáz", "ezer","kétezer"};
+            string[] ertek3 = new string[] { "száz", "kétszáz", "ezer", "kétezer" };
             do
             {
                 Console.WriteLine("Kérlek írj be egy számot! (0-9999ig)");
                 szam = Console.ReadLine();
                 if (szam.Length != 5)
                 {
-                    for (int i = 0; i < szam.Length; i++)
                     {
+                        for (int i = 0; i < szam.Length; i++)
+                    {
+                        
+                        
                         if (szam.Length == 1)
                         {
                             switch (szam[0])
@@ -146,7 +149,7 @@ namespace szamkiiras
                                     case '8': szam2 = ertek0[7]; break;
                                     case '9': szam2 = ertek0[8]; break;
                                 }
-                                szam1 = szam1 + szam2+szam3;
+                                szam1 = szam1 + szam2 + szam3;
                             }
                             else
                             {
@@ -170,7 +173,7 @@ namespace szamkiiras
                             }
                             switch (szam[1])
                             {
-                                case '0': szam2 = "";break;
+                                case '0': szam2 = ""; break;
                                 case '1': szam2 = ertek1[1] + ertek3[0]; break;
                                 case '2': szam2 = ertek3[1]; break;
                                 case '3': szam2 = ertek1[3] + ertek3[0]; break;
@@ -211,7 +214,7 @@ namespace szamkiiras
                             {
                                 switch (szam[2])
                                 {
-                                    case '0': szam3 = "";break;
+                                    case '0': szam3 = ""; break;
                                     case '1': szam3 = ertek2[0]; break;
                                     case '2': szam3 = ertek2[1]; break;
                                     case '3': szam3 = ertek2[2]; break;
@@ -223,14 +226,15 @@ namespace szamkiiras
                                     case '9': szam3 = ertek2[8]; break;
                                 }
                             }
-                            szam1 = szam1 + szam2 + szam3+szam4;
+                            szam1 = szam1 + szam2 + szam3 + szam4;
                         }
                     }
-                    Console.WriteLine("{0}", szam1);
-                }
+                       }
+                        Console.WriteLine("{0}", szam1);
+                    }
                 else
-                {
-                    Console.WriteLine("Kérlek 1000 alatti és 0 feletti számot adj meg!");
+                    {
+                        Console.WriteLine("Kérlek 1000 alatti és 0 feletti számot adj meg!");
                 }
             } while (szam != "");
         }
