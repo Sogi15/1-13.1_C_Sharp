@@ -171,7 +171,7 @@ namespace szamkiiras
                             switch (szam[1])
                             {
                                 case '0': szam2 = "";break;
-                                case '1': szam2 = ertek1[1]+ertek3[0]; break;
+                                case '1': szam2 = ertek1[1] + ertek3[0]; break;
                                 case '2': szam2 = ertek3[1]; break;
                                 case '3': szam2 = ertek1[3] + ertek3[0]; break;
                                 case '4': szam2 = ertek1[4] + ertek3[0]; break;
@@ -181,8 +181,49 @@ namespace szamkiiras
                                 case '8': szam2 = ertek1[8] + ertek3[0]; break;
                                 case '9': szam2 = ertek1[9] + ertek3[0]; break;
                             }
-
-                            szam1 = szam1+szam2;
+                            switch (szam[2])
+                            {
+                                case '0': szam3 = ""; break;
+                                case '1': szam3 = ertek0[0]; break;
+                                case '2': szam3 = ertek0[1]; break;
+                                case '3': szam3 = ertek0[2]; break;
+                                case '4': szam3 = ertek0[3]; break;
+                                case '5': szam3 = ertek0[4]; break;
+                                case '6': szam3 = ertek0[5]; break;
+                                case '7': szam3 = ertek0[6]; break;
+                                case '8': szam3 = ertek0[7]; break;
+                                case '9': szam3 = ertek0[8]; break;
+                            }
+                            switch (szam[3])
+                            {
+                                case '0': szam4 = ""; break;
+                                case '1': szam4 = ertek1[1]; break;
+                                case '2': szam4 = ertek1[2]; break;
+                                case '3': szam4 = ertek1[3]; break;
+                                case '4': szam4 = ertek1[4]; break;
+                                case '5': szam4 = ertek1[5]; break;
+                                case '6': szam4 = ertek1[6]; break;
+                                case '7': szam4 = ertek1[7]; break;
+                                case '8': szam4 = ertek1[8]; break;
+                                case '9': szam4 = ertek1[9]; break;
+                            }
+                            if (szam[2] != '0' && szam[3] != '0')
+                            {
+                                switch (szam[2])
+                                {
+                                    case '0': szam3 = "";break;
+                                    case '1': szam3 = ertek2[0]; break;
+                                    case '2': szam3 = ertek2[1]; break;
+                                    case '3': szam3 = ertek2[2]; break;
+                                    case '4': szam3 = ertek2[3]; break;
+                                    case '5': szam3 = ertek2[4]; break;
+                                    case '6': szam3 = ertek2[5]; break;
+                                    case '7': szam3 = ertek2[6]; break;
+                                    case '8': szam3 = ertek2[7]; break;
+                                    case '9': szam3 = ertek2[8]; break;
+                                }
+                            }
+                            szam1 = szam1 + szam2 + szam3+szam4;
                         }
                     }
                     Console.WriteLine("{0}", szam1);
