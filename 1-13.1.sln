@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c_sharp_dolgozat4", "c_shar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c_sharp_dolgozat5", "c_sharp_dolgozat5\c_sharp_dolgozat5.csproj", "{7B9DEFD8-A288-4A23-A19F-F4357CD08D52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "objektumorientaltprogramozas", "objektumorientaltprogramozas\objektumorientaltprogramozas.csproj", "{05F25E54-2302-42CC-8A6D-F656ECD62633}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{7B9DEFD8-A288-4A23-A19F-F4357CD08D52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B9DEFD8-A288-4A23-A19F-F4357CD08D52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B9DEFD8-A288-4A23-A19F-F4357CD08D52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05F25E54-2302-42CC-8A6D-F656ECD62633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05F25E54-2302-42CC-8A6D-F656ECD62633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05F25E54-2302-42CC-8A6D-F656ECD62633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05F25E54-2302-42CC-8A6D-F656ECD62633}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
