@@ -26,6 +26,7 @@ namespace korsugarteruletkerulet
             this.terulet = (getSugar() * getSugar())*Math.PI;
             return this.terulet; }
     }
+
     class Program
     {
         static void Main(string[] args)
@@ -55,3 +56,4 @@ namespace korsugarteruletkerulet
         }
     }
 }
+
