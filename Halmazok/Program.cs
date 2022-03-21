@@ -26,22 +26,22 @@ namespace Halmazok
             elemszamA = int.Parse(Console.ReadLine());
             if (elemszamA > 200) { elemszamA = rdm.Next(100, 200); }
             A = new int[elemszamA];
-            for (int i = 0; i < elemszamA; i++) { A[i] = rdm.Next(-100, 100); /*Console.WriteLine("{0}",A[i]);*/}
+            for (int i = 0; i < elemszamA; i++) { A[i] = rdm.Next(-100, 100); Console.Write("{0} ", A[i]); }
 
         }
         public int[] feltoltB_x() { return this.B; }
         public int[] feltoltA_x() { return this.A; }
         public void feltoltB()
         {
-            Console.WriteLine("Írd be az elemek számát a második halmazban!");
+            Console.WriteLine("\nÍrd be az elemek számát a második halmazban!");
             elemszamB = int.Parse(Console.ReadLine());
             if (elemszamB > 200) { elemszamB = rdm.Next(100, 200); }
             B = new int[elemszamB];
-            for (int i = 0; i < elemszamB; i++) { B[i] = rdm.Next(-100, 100); /*Console.WriteLine("{0}",B[i]);*/}
+            for (int i = 0; i < elemszamB; i++) { B[i] = rdm.Next(-100, 100); Console.Write("{0} ", B[i]); }
         }
         public void valasz()
         {
-            Console.WriteLine("Kérlek add meg, hogy melyik műveletet végezzük el!:\nu = Unió\nm = Metszet\na = A-B\nb = B-A\n");
+            Console.WriteLine("\nKérlek add meg, hogy melyik műveletet végezzük el!:\nu = Unió\nm = Metszet\na = A-B\nb = B-A\n");
             key = Console.ReadKey().KeyChar;
             if (key == 'u') // Unió
             {
