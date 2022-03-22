@@ -7,41 +7,28 @@ using System.Threading.Tasks;
 namespace homersekletelemzes
 {
     class Homerseklet {
-        private string datum;
-        private int[] ho;
-        private string evszak;
         private string honap;
-        private string[] evszakok = new string[] { "Tél", "Tavasz", "Nyár", "Ősz" };
-        private string[] honapok = new string[] { "Január", "Február", "Március", "Április", "Május", "Június", "Július", "Augusztus", "Szeptember", "Október", "November", "December" };
-        private int[] hnapok = new int[] { 28, 30, 31 };
-        private Random rdm = new Random();
-        public Homerseklet(string datum) { this.datum = datum; }
-        public Homerseklet() {}
-        public void bekeres() {
-            Console.WriteLine("Kérlek válassz egy évszakot!!\n1 = Tél\n 2 = Tavasz\n 3 = Nyár\n 4 = Ősz\n");
-            char be = Console.ReadKey().KeyChar;
-            if (be == '1') { Console.WriteLine("Tál"); }
-            else if (be == '2') { Console.WriteLine("Tál"); }
-            else if (be == '3') { Console.WriteLine("Tál"); }
-            else if (be == '4') { Console.WriteLine("Tál"); }
-        }
-        public void date()
-        {
+        private string[] evszak = new string[] {"Tél","Tavasz","Nyár","Ősz"};
+        private int nap;
 
-            //switch (Console.ReadLine())
-            //{
-            //    case "januar": evszak = evszakok[0];honap = honapok[0];
-            //        switch () { }
-            //        break;
-            //}
+        public void behonap() {
+            Console.WriteLine("Írd be kérlek hanyadik vagy melyik hónap!");
+            honap = Console.ReadLine();
+            if (honap == "01" || honap == "1" || honap == "január" || honap == "jan")
+            {;
+                Console.WriteLine("Válaszott hónap: Január\nVálaszott évszak: {0}");}
+            else { Console.WriteLine("Kérlek helyesen írd be a hónap nevét!\nPld: [01/1/január/jan] !!"); }
+
         }
+        public Homerseklet() { }
+        
     }
     class Program
     {
         static void Main(string[] args)
         {
             Homerseklet megoldas = new Homerseklet();
-            megoldas.bekeres();
+            megoldas.behonap();
             Console.ReadKey();
 
         }
