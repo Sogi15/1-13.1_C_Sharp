@@ -8,9 +8,10 @@ namespace homersekletelemzes
 {
     class Homerseklet {
         private string[] evszaktomb = new string[] {"Tél","Tavasz","Nyár","Ősz"};
-        private int nap, hoidx, beho,minho,maxho,napmax,napmin;
+        private int nap, hoidx, beho,minho,maxho,napmax,napmin,homin,homax;
         private int[] homerseklet;
-        private string evszak, honap,kiir,kiirho;
+        private string evszak, honap,kiir;
+        private double atlag,napi,havi,evi;
         private Random rdm = new Random();
 
         public void behonap() {
@@ -83,15 +84,32 @@ namespace homersekletelemzes
                 }
             }
         }
+        public void atlagho()
+        {
+            napi = napmax * napmin / 2;
+        }
         public void kiiras()
         {
-            if (hoidx == 28 && nap <= 28 && nap >= 1)
+            if (nap != 0)
             {
-                kiir = "Válaszott hónap: {0}\nVálaszott évszak: {1}\nVálasztot dátum: {2}";
-                kiirho = "\nNapi Hőmérséklet:\nMin: {0} | Max: {1}";
+                if (hoidx == 28 && nap <= 28 && nap >= 1)
+                {
+                    kiir = "Válaszott hónap: {0}\nVálaszott évszak: {1}\nVálasztott dátum: {2}\nNapi Hőmérséklet:\nMin: {3} | Max: {4} | Átlag: {8}\nHavi Hőmérséklet:\nMin: {5} | Max: {6} | Átlag {7}";
+                    Console.WriteLine(kiir, honap, evszak, nap, napmin, napmax, homin, homax,atlag,napi);
+                }
+                else if (hoidx == 30 && nap <= 30 && nap >= 1)
+                {
+                    kiir = "Válaszott hónap: {0}\nVálaszott évszak: {1}\nVálasztott dátum: {2}\nNapi Hőmérséklet:\nMin: {3} | Max: {4} | Átlag: {8}\nHavi Hőmérséklet:\nMin: {5} | Max: {6} | Átlag {7}";
+                    Console.WriteLine(kiir, honap, evszak, nap, napmin, napmax, homin, homax,atlag,napi);
+                }
+                else if (hoidx == 31 && nap <= 31 && nap >= 1)
+                {
+                    kiir = "Válaszott hónap: {0}\nVálaszott évszak: {1}\nVálasztott dátum: {2}\nNapi Hőmérséklet:\nMin: {3} | Max: {4} | Átlag: {8}\nHavi Hőmérséklet:\nMin: {5} | Max: {6} | Átlag {7}";
+                    Console.WriteLine(kiir, honap, evszak, nap, napmin, napmax, homin, homax,atlag,napi);
+                }
+                else { Console.WriteLine("{0} csak {1} napból áll!", honap,hoidx); }
             }
-            else { Console.WriteLine("Február csak 28 napból áll!"); }
-            Console.WriteLine(kiir, honap, evszak, nap, "\n", kiirho, napmin, napmax);
+            else { Console.WriteLine("Nem létezik nullás dátum!"); }
         }
         public Homerseklet() { }
         
