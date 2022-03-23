@@ -8,7 +8,10 @@ namespace homersekletelemzes
 {
     class Homerseklet {
         private string[] evszaktomb = new string[] {"Tél","Tavasz","Nyár","Ősz"};
-        private int nap, hoidx, beho, minho, maxho;
+        private int nap, hoidx, beho,minho,maxho,napminho,napmaxho;
+        private int[] hoho = new int[] { };
+        private int[] napho = new int[] { };
+        private int[] evho = new int[] { };
         private string evszak, honap;
         private Random rdm = new Random();
 
@@ -36,12 +39,21 @@ namespace homersekletelemzes
             }
             Console.WriteLine("Kérlek add meg a dátumot! (1-31)");
             nap = int.Parse(Console.ReadLine());
-            if (beho == 2 && hoidx == 28 || nap <= 28 || nap >= 1)
+        }
+        public void honapho()
+        {
+            if (hoidx == 28 || nap <= 28 || nap >= 1)
             {
-                Console.WriteLine("Válaszott hónap: {0}\nVálaszott évszak: {1}\nVálasztot dátum: {2}", honap, evszak, nap);
-                int uno = minho
+                for (int i = 0; i < napho.Length; i++)
+                {
+                    napho[i] = rdm.Next(-10,10);
+                }
             }
             else { Console.WriteLine("Február csak 28 napból áll!"); }
+        }
+        public void kiiras()
+        {
+            Console.WriteLine("Válaszott hónap: {0}\nVálaszott évszak: {1}\nVálasztott dátum: {2}\nHőmérséklet:\nMin: {3} | Max: {4}", honap, evszak, nap,napminho,napmaxho);
         }
         public Homerseklet() { }
         
@@ -52,6 +64,8 @@ namespace homersekletelemzes
         {
             Homerseklet megoldas = new Homerseklet();
             megoldas.behonap();
+            megoldas.honapho();
+            megoldas.kiiras();
             Console.ReadKey();
 
         }
