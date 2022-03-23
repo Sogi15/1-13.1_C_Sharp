@@ -8,11 +8,9 @@ namespace homersekletelemzes
 {
     class Homerseklet {
         private string[] evszaktomb = new string[] {"Tél","Tavasz","Nyár","Ősz"};
-        private int nap, hoidx, beho,minho,maxho,napminho,napmaxho;
-        private int[] hoho = new int[] { };
-        private int[] napho = new int[] { };
-        private int[] evho = new int[] { };
-        private string evszak, honap;
+        private int nap, hoidx, beho,minho,maxho,napmax,napmin;
+        private int[] homerseklet;
+        private string evszak, honap,kiir,kiirho;
         private Random rdm = new Random();
 
         public void behonap() {
@@ -42,18 +40,58 @@ namespace homersekletelemzes
         }
         public void honapho()
         {
-            if (hoidx == 28 || nap <= 28 || nap >= 1)
+            homerseklet = new int[hoidx];
+            if (evszak == "Tél")
             {
-                for (int i = 0; i < napho.Length; i++)
+                for (int i = 0; i < homerseklet.Length; i++)
                 {
-                    napho[i] = rdm.Next(-10,10);
+                    homerseklet[i] = rdm.Next(-10, 5);
                 }
             }
-            else { Console.WriteLine("Február csak 28 napból áll!"); }
+            else if (evszak == "Tavasz")
+            {
+                for (int i = 0; i < homerseklet.Length; i++)
+                {
+                    homerseklet[i] = rdm.Next(-1, 20);
+                }
+            }
+            else if (evszak == "Nyár")
+            {
+                for (int i = 0; i < homerseklet.Length; i++)
+                {
+                    homerseklet[i] = rdm.Next(10, 40);
+                }
+            }
+            else if (evszak == "Ősz")
+            {
+                for (int i = 0; i < homerseklet.Length; i++)
+                {
+                    homerseklet[i] = rdm.Next(0,22);
+                }
+            }
+            for (int x = 0; x < homerseklet.Length; x++)
+            {
+                if (homerseklet[x] < minho)
+                {
+                    minho = homerseklet[x];
+                    napmin = minho;
+                }
+                else if (homerseklet[x] > maxho)
+                {
+                    maxho = homerseklet[x];
+                    napmax = maxho;
+                }
+            }
         }
         public void kiiras()
         {
-            Console.WriteLine("Válaszott hónap: {0}\nVálaszott évszak: {1}\nVálasztott dátum: {2}\nHőmérséklet:\nMin: {3} | Max: {4}", honap, evszak, nap,napminho,napmaxho);
+            if (hoidx == 28 && nap <= 28 && nap >= 1)
+            {
+                kiir = "Válaszott hónap: {0}\nVálaszott évszak: {1}\nVálasztot dátum: {2}";
+                kiirho = "\nNapi Hőmérséklet:\nMin: {0} | Max: {1}";
+            }
+            else { Console.WriteLine("Február csak 28 napból áll!"); }
+            Console.WriteLine(kiir, honap, evszak, nap, "\n", kiirho, napmin, napmax);
         }
         public Homerseklet() { }
         
