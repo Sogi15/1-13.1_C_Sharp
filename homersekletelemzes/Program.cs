@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 namespace homersekletelemzes
 {
     class Homerseklet {
-        private string[] evszaktomb = new string[] {"Tél","Tavasz","Nyár","Ősz"};
-        private int nap, hoidx, beho,minho,maxho,napmax,napmin,homin,homax;
-        private int[] homerseklet;
-        private string evszak, honap,kiir;
-        private double atlag,napi,havi,evi;
+        private string[] evszaktomb = new string[4] {"Tél","Tavasz","Nyár","Ősz"};
+        private int nap, hoidx, beho,minho,maxho,napmax,napmin,i;
+        private int[] homerseklet, homin, homax, evimin, evimax;
+        private string evszak, honap;
+        private double napi,havi,evi;
         private Random rdm = new Random();
 
         public void behonap() {
@@ -21,53 +21,56 @@ namespace homersekletelemzes
             {
                 Console.WriteLine("Kérlek helyesen írd be a hónap számát [1-12] !!");
             }
-            switch (beho)
+            else
             {
-                case 1: honap = "Január";evszak = evszaktomb[0]; hoidx = 31; break;
-                case 2: honap = "Február"; evszak = evszaktomb[0]; hoidx = 28; break;
-                case 3: honap = "Március"; evszak = evszaktomb[1]; hoidx = 31; break;
-                case 4: honap = "Április"; evszak = evszaktomb[1]; hoidx = 30; break;
-                case 5: honap = "Május"; evszak = evszaktomb[1]; hoidx = 31; break;
-                case 6: honap = "Június"; evszak = evszaktomb[2]; hoidx = 30; break;
-                case 7: honap = "Július"; evszak = evszaktomb[2]; hoidx = 31; break;
-                case 8: honap = "Augusztus"; evszak = evszaktomb[2]; hoidx = 31; break;
-                case 9: honap = "Szeptember"; evszak = evszaktomb[3]; hoidx = 30; break;
-                case 10: honap = "Október"; evszak = evszaktomb[3]; hoidx = 31; break;
-                case 11: honap = "November"; evszak = evszaktomb[3]; hoidx = 30; break;
-                case 12: honap = "December"; evszak = evszaktomb[0]; hoidx = 31; break;
+                switch (beho)
+                {
+                    case 1: honap = "Január"; evszak = evszaktomb[0]; hoidx = 31; break;
+                    case 2: honap = "Február"; evszak = evszaktomb[0]; hoidx = 28; break;
+                    case 3: honap = "Március"; evszak = evszaktomb[1]; hoidx = 31; break;
+                    case 4: honap = "Április"; evszak = evszaktomb[1]; hoidx = 30; break;
+                    case 5: honap = "Május"; evszak = evszaktomb[1]; hoidx = 31; break;
+                    case 6: honap = "Június"; evszak = evszaktomb[2]; hoidx = 30; break;
+                    case 7: honap = "Július"; evszak = evszaktomb[2]; hoidx = 31; break;
+                    case 8: honap = "Augusztus"; evszak = evszaktomb[2]; hoidx = 31; break;
+                    case 9: honap = "Szeptember"; evszak = evszaktomb[3]; hoidx = 30; break;
+                    case 10: honap = "Október"; evszak = evszaktomb[3]; hoidx = 31; break;
+                    case 11: honap = "November"; evszak = evszaktomb[3]; hoidx = 30; break;
+                    case 12: honap = "December"; evszak = evszaktomb[0]; hoidx = 31; break;
+                }
+                Console.WriteLine("Kérlek add meg a dátumot! (1-31)");
+                nap = int.Parse(Console.ReadLine());
             }
-            Console.WriteLine("Kérlek add meg a dátumot! (1-31)");
-            nap = int.Parse(Console.ReadLine());
+            homerseklet = new int[hoidx];
         }
         public void honapho()
         {
-            homerseklet = new int[hoidx];
             if (evszak == "Tél")
             {
-                for (int i = 0; i < homerseklet.Length; i++)
+                for (i = 0; i < homerseklet.Length; i++)
                 {
-                    homerseklet[i] = rdm.Next(-10, 5);
+                    homerseklet[i] = rdm.Next(-20, 5);
                 }
             }
             else if (evszak == "Tavasz")
             {
-                for (int i = 0; i < homerseklet.Length; i++)
+                for (i = 0; i < homerseklet.Length; i++)
                 {
                     homerseklet[i] = rdm.Next(-1, 20);
                 }
             }
             else if (evszak == "Nyár")
             {
-                for (int i = 0; i < homerseklet.Length; i++)
+                for (i = 0; i < homerseklet.Length; i++)
                 {
                     homerseklet[i] = rdm.Next(10, 40);
                 }
             }
             else if (evszak == "Ősz")
             {
-                for (int i = 0; i < homerseklet.Length; i++)
+                for (i = 0; i < homerseklet.Length; i++)
                 {
-                    homerseklet[i] = rdm.Next(0,22);
+                    homerseklet[i] = rdm.Next(0, 22);
                 }
             }
             for (int x = 0; x < homerseklet.Length; x++)
@@ -83,10 +86,22 @@ namespace homersekletelemzes
                     napmax = maxho;
                 }
             }
-        }
-        public void atlagho()
-        {
-            napi = napmax * napmin / 2;
+            homax = new int[hoidx];
+            homin = new int[hoidx];
+            evimax = new int[12];
+            evimin = new int[12];
+            for (int o = 0; o < homerseklet.Length; o++)
+            {
+                for (i = 0; i < hoidx; i++)
+                {
+                    if(homerseklet[i] < minho)
+                    {
+                    }
+                }
+            }
+            napi = (napmax + napmin) / 2;
+            //havi = (homax + homin) / 2;
+            //evi = (evimax + evimin) / 2;
         }
         public void kiiras()
         {
@@ -94,18 +109,21 @@ namespace homersekletelemzes
             {
                 if (hoidx == 28 && nap <= 28 && nap >= 1)
                 {
-                    kiir = "Válaszott hónap: {0}\nVálaszott évszak: {1}\nVálasztott dátum: {2}\nNapi Hőmérséklet:\nMin: {3} | Max: {4} | Átlag: {8}\nHavi Hőmérséklet:\nMin: {5} | Max: {6} | Átlag {7}";
-                    Console.WriteLine(kiir, honap, evszak, nap, napmin, napmax, homin, homax,atlag,napi);
+                    Console.WriteLine("Válaszott évszak: {0}", evszak);
+                    Console.WriteLine("Válaszott hónap: {0}", honap);
+                    Console.WriteLine("Válaszott nap: {0}\nHőmérséklet:\nMin: {1} | Max {2} | Átlag: {3}", nap,napmin,napmax,napi);
                 }
                 else if (hoidx == 30 && nap <= 30 && nap >= 1)
                 {
-                    kiir = "Válaszott hónap: {0}\nVálaszott évszak: {1}\nVálasztott dátum: {2}\nNapi Hőmérséklet:\nMin: {3} | Max: {4} | Átlag: {8}\nHavi Hőmérséklet:\nMin: {5} | Max: {6} | Átlag {7}";
-                    Console.WriteLine(kiir, honap, evszak, nap, napmin, napmax, homin, homax,atlag,napi);
+                    Console.WriteLine("Válaszott évszak: {0}", evszak);
+                    Console.WriteLine("Válaszott hónap: {0}", honap);
+                    Console.WriteLine("Válaszott nap: {0}\nHőmérséklet:\nMin: {1} | Max {2} | Átlag: {3}", nap, napmin, napmax, napi);
                 }
                 else if (hoidx == 31 && nap <= 31 && nap >= 1)
                 {
-                    kiir = "Válaszott hónap: {0}\nVálaszott évszak: {1}\nVálasztott dátum: {2}\nNapi Hőmérséklet:\nMin: {3} | Max: {4} | Átlag: {8}\nHavi Hőmérséklet:\nMin: {5} | Max: {6} | Átlag {7}";
-                    Console.WriteLine(kiir, honap, evszak, nap, napmin, napmax, homin, homax,atlag,napi);
+                    Console.WriteLine("Válaszott évszak: {0}", evszak);
+                    Console.WriteLine("Válaszott hónap: {0}", honap);
+                    Console.WriteLine("Válaszott nap: {0}\nHőmérséklet:\nMin: {1} | Max {2} | Átlag: {3}", nap, napmin, napmax, napi);
                 }
                 else { Console.WriteLine("{0} csak {1} napból áll!", honap,hoidx); }
             }
