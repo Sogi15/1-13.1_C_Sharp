@@ -63,6 +63,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cimletezes", "cimletezes\ci
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homersekletelemzes", "homersekletelemzes\homersekletelemzes.csproj", "{AA18E9BC-8375-46E4-BBF6-DA42E9A1C167}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20220328", "20220328\20220328.csproj", "{4F33B8E6-A8D8-498A-AEC8-45AC526270D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -189,6 +191,10 @@ Global
 		{AA18E9BC-8375-46E4-BBF6-DA42E9A1C167}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA18E9BC-8375-46E4-BBF6-DA42E9A1C167}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA18E9BC-8375-46E4-BBF6-DA42E9A1C167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F33B8E6-A8D8-498A-AEC8-45AC526270D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F33B8E6-A8D8-498A-AEC8-45AC526270D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F33B8E6-A8D8-498A-AEC8-45AC526270D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F33B8E6-A8D8-498A-AEC8-45AC526270D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
