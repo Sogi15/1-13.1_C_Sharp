@@ -8,43 +8,46 @@ namespace Sorozatok
 {
     class Sorozat
     {
-        private int[] sorozatelemek = new int[4];
+        private double[] sorozatelemek = new double[4];
 
         public void bekeres()
         {
             Console.WriteLine("Írj be 4db számot");
-            sorozatelemek[0] = int.Parse(Console.ReadLine());
-            sorozatelemek[1] = int.Parse(Console.ReadLine());
-            sorozatelemek[2] = int.Parse(Console.ReadLine());
-            sorozatelemek[3] = int.Parse(Console.ReadLine());
+            sorozatelemek[0] = Convert.ToDouble(Console.ReadLine());
+            sorozatelemek[1] = Convert.ToDouble(Console.ReadLine());
+            sorozatelemek[2] = Convert.ToDouble(Console.ReadLine());
+            sorozatelemek[3] = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Beírt számok:");
+            double a = sorozatelemek[0];
+            double b = sorozatelemek[1];
+            double c = sorozatelemek[2];
+           double d = sorozatelemek[3];
             for (int i = 0; i < sorozatelemek.Length; i++)
             {
                 Console.WriteLine(sorozatelemek[i]);
             }
-        }
-        public void szamtani()
-        {
-            int a1, a2, a3;
-            a1 = sorozatelemek[0] - sorozatelemek[1];
-            a2 = sorozatelemek[1] - sorozatelemek[2];
-            a3 = sorozatelemek[2] - sorozatelemek[3];
-            if (a1 == a2 && a1 == a3)
+            if (d-c==c-b&c-b==b-a)
             {
-                Console.WriteLine("Ez egy számtani sorozat!\nDifferencia: {0}", a1);
-
+                Console.WriteLine("Ez egy számtani sorozat!");
             }
-            else { Console.WriteLine("Ez nem egy számtani sorozat!"); }
+            else
+            {
+                if (d / c == c / b & c / b == b / a)
+                {
+                    Console.WriteLine("Ez egy mértani sorozat!");
+                }
+                else { Console.WriteLine("A beírt számok egyik sorozatnak sem felelnek meg"); }
+            }
         }
         public Sorozat() { }
     }
+
     class Program
     {
         static void Main(string[] args)
         {
             Sorozat megoldas = new Sorozat();
             megoldas.bekeres();
-            megoldas.szamtani();
             Console.ReadKey();
         }
     }
