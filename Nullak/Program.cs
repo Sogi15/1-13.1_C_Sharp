@@ -9,12 +9,12 @@ namespace Nullak
     class Nulls
     {
         private Random rdm = new Random();
-        private string sz1, sz2,sz3,sz4,sz5,sz6,sz7,sz8,sz9,sz10,ered;
-        private int nulla = 0,nulle;
+        private string sz1, sz2,sz3,sz4,sz5,sz6,sz7,sz8,sz9,sz10;
+        private int nulla = 0,nulle,ered;
         private int[] szam = new int[10], nnn = new int[10];
         public Nulls() { }
 
-        public void randoms() {for (int k = 0; k < szam.Length; k++){szam[k] = rdm.Next(0, 1000);}}
+        public void randoms() {for (int k = 0; k < szam.Length; k++){szam[k] = rdm.Next(0, 99999999);}}
         public void lengts()
         {
             sz1 = Convert.ToString(szam[0]);
@@ -92,19 +92,13 @@ namespace Nullak
                 if (nnn[i] > nulla)
                 {
                     nulla = nnn[i];
-                    for (int k = 0; k < i; k++)
-                    {
-                        if (nulla == nnn[i])
-                        {
-                            ered = Convert.ToString(k);
-                        }
-                    }
                 }
+                ered = Array.IndexOf(nnn, nulla) +1;
             }
         }
         public void kiir()
         {
-            Console.WriteLine("A {0} számban van a legtöbb nulla!\nNullák száma: {1}",ered, nulla);
+            Console.WriteLine("A {0}. számban van a legtöbb nulla!\nNullák száma: {1}",ered, nulla);
         }
         
     }
