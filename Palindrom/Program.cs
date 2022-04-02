@@ -11,7 +11,6 @@ namespace Palindrom
         class Palindrom
         {
             private string szovegbe, szovegki = String.Empty;
-            private char[] karakterlanc;
             public Palindrom() { }
             public void bekeres()
             {
@@ -23,7 +22,6 @@ namespace Palindrom
             {
                 string szovegbeL = szovegbe.ToLower();
                 szovegbe = String.Concat(szovegbeL.Where(c => !Char.IsWhiteSpace(c)));
-                karakterlanc = szovegbe.ToCharArray();
                 for (int i = szovegbe.Length - 1; i > -1; i--)
                 {
                     szovegki += szovegbe[i];
