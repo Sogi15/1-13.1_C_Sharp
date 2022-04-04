@@ -87,6 +87,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listak", "Listak\Listak.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elagazas", "Elagazas\Elagazas.csproj", "{12CB2013-82DE-4EF0-B5E0-0BCAA06BB4CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForAndForeach", "ForAndForeach\ForAndForeach.csproj", "{63E36014-2EC2-4883-B0B1-05896B88C658}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -261,6 +263,10 @@ Global
 		{12CB2013-82DE-4EF0-B5E0-0BCAA06BB4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12CB2013-82DE-4EF0-B5E0-0BCAA06BB4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12CB2013-82DE-4EF0-B5E0-0BCAA06BB4CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63E36014-2EC2-4883-B0B1-05896B88C658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63E36014-2EC2-4883-B0B1-05896B88C658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63E36014-2EC2-4883-B0B1-05896B88C658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63E36014-2EC2-4883-B0B1-05896B88C658}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
