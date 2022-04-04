@@ -83,6 +83,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Palindrom", "Palindrom\Pali
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tukor", "Tukor\Tukor.csproj", "{AB24B1EC-9744-416E-90B5-15E6FFB443A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listak", "Listak\Listak.csproj", "{5856B302-418B-475E-BF86-C5CEF6AE421F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -249,6 +251,10 @@ Global
 		{AB24B1EC-9744-416E-90B5-15E6FFB443A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB24B1EC-9744-416E-90B5-15E6FFB443A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB24B1EC-9744-416E-90B5-15E6FFB443A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5856B302-418B-475E-BF86-C5CEF6AE421F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5856B302-418B-475E-BF86-C5CEF6AE421F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5856B302-418B-475E-BF86-C5CEF6AE421F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5856B302-418B-475E-BF86-C5CEF6AE421F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
