@@ -97,6 +97,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixBill", "MatrixBill\Ma
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixBill2", "MatrixBill2\MatrixBill2.csproj", "{73633639-8E18-4C82-98EF-9E14071C7098}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixBill3", "MatrixBill3\MatrixBill3.csproj", "{44BA0F8E-9258-489B-A539-591784942694}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -291,6 +293,10 @@ Global
 		{73633639-8E18-4C82-98EF-9E14071C7098}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73633639-8E18-4C82-98EF-9E14071C7098}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73633639-8E18-4C82-98EF-9E14071C7098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BA0F8E-9258-489B-A539-591784942694}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BA0F8E-9258-489B-A539-591784942694}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BA0F8E-9258-489B-A539-591784942694}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BA0F8E-9258-489B-A539-591784942694}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

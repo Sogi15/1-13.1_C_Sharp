@@ -25,7 +25,7 @@ namespace MatrixBill
                 {
                     for (int j = 0; j < matrix.GetLength(1); j++)
                     {
-                        Console.Write("Kérem a(z) {0} sor {1} oszlopa elemet: ", i + 1, j + 1); // bekéréskor kiírja a az indexeket
+                        Console.Write("Kérem a(z) {0} sor {1} oszlopa elemet: ", i + 1, j + 1); // bekéréskor kiírja a az indexeket ezért másoltam csak át az 1. feladat megoldását!
                         matrix[i, j] = int.Parse(Console.ReadLine());
                     }
                 }
