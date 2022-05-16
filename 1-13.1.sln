@@ -115,6 +115,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negyszog_teszt", "Negyszog_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListaKezeles_dolgozat", "ListaKezeles_dolgozat\ListaKezeles_dolgozat.csproj", "{2ECFC81C-572C-49B1-AFD3-49DA83C84A2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Henger", "HengerTeszt_gyak\Henger.csproj", "{F2A9C4EC-4A10-42C7-A545-325EA6C9793D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HengerTeszt_unitTeszt", "HengerTeszt_unitTeszt\HengerTeszt_unitTeszt.csproj", "{222601EA-C2D5-41B6-9D8C-7121C2B712BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -345,6 +349,14 @@ Global
 		{2ECFC81C-572C-49B1-AFD3-49DA83C84A2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ECFC81C-572C-49B1-AFD3-49DA83C84A2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ECFC81C-572C-49B1-AFD3-49DA83C84A2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2A9C4EC-4A10-42C7-A545-325EA6C9793D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2A9C4EC-4A10-42C7-A545-325EA6C9793D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2A9C4EC-4A10-42C7-A545-325EA6C9793D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2A9C4EC-4A10-42C7-A545-325EA6C9793D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{222601EA-C2D5-41B6-9D8C-7121C2B712BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{222601EA-C2D5-41B6-9D8C-7121C2B712BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{222601EA-C2D5-41B6-9D8C-7121C2B712BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{222601EA-C2D5-41B6-9D8C-7121C2B712BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
