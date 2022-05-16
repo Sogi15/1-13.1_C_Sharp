@@ -15,7 +15,7 @@ namespace ListaKezeles_dolgozat
         public Cityes() { }
         public void setDb()
         {
-            try
+            try //vizsgálat, ha az elején üres enter-t ütünk javítsa ki ne fusson hibára
             {
                 Console.WriteLine("Add meg a városok nevének a számát!");
                 nevszam = int.Parse(Console.ReadLine());
@@ -30,8 +30,8 @@ namespace ListaKezeles_dolgozat
         }
         public void setNevek()
         {
-            varosok = new List<string>(nevszam);
-            if (nevszam == 0)
+            varosok = new List<string>(nevszam); 
+            if (nevszam == 0) //ha nevszam változó 0 akkor addig kéri be a városok nevét amíg entert nem ütünk
             {
                 do
                 {
@@ -46,7 +46,7 @@ namespace ListaKezeles_dolgozat
             }
             else
             {
-                for (int i = 0; i < nevszam; i++)
+                for (int i = 0; i < nevszam; i++) //ha rendes értéket adunk meg akkor annyi várost kér be
                 {
                     Console.WriteLine("Add meg a {0}. város nevét", i + 1);
                     szerepel = Console.ReadLine();
@@ -54,7 +54,7 @@ namespace ListaKezeles_dolgozat
                 }
             }
         }
-        public void getNevek()
+        public void getNevek() // város nevek kiírása
         {
             Console.WriteLine("A Listában megtalálható városok:");
             foreach (var varos in varosok)
@@ -62,7 +62,7 @@ namespace ListaKezeles_dolgozat
                 Console.Write("{0}, ", varos);
             }
         }
-        public void getVan()
+        public void getVan() //lista elem vizsgálat
         {
             Console.WriteLine("\nÍrj be egy városnevet hátha szerepel már a listában!");
             szerepel = Console.ReadLine();
@@ -75,7 +75,7 @@ namespace ListaKezeles_dolgozat
                 Console.WriteLine("A {0} nevű város sajnos nem található a listában!",szerepel);
             }
         }
-        public void delNev()
+        public void delNev() // elem törlés ha szerepel a listában
         {
             Console.WriteLine("Kérlek írj be egy városnevet!\nHa szerepel a listában törlődni fog!\nHa nem akkor hozzá adódik!");
             szerepel = Console.ReadLine();
@@ -92,7 +92,7 @@ namespace ListaKezeles_dolgozat
                 getNevek();
             }
         }
-        public void delLast()
+        public void delLast() //utolsó lista elem törlése ha kérjük (opcionális)
         {
             Console.WriteLine("\nSzeretnéd, hogy töröljük a listában található utolsó elemet?\ni = igen | n = nem");
             try
