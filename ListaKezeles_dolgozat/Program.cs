@@ -30,13 +30,29 @@ namespace ListaKezeles_dolgozat
         }
         public void setNevek()
         {
-                varosok = new List<string>(nevszam);
+            varosok = new List<string>(nevszam);
+            if (nevszam == 0)
+            {
+                do
+                {
+                    for (int i = 0; i <= nevszam; i++)
+                    {
+                        Console.WriteLine("Add meg a város nevét!");
+                        szerepel = Console.ReadLine();
+                        varosok.Add(szerepel);
+                    }
+                } while (szerepel != "");
+                varosok.RemoveAt(varosok.Count - 1);
+            }
+            else
+            {
                 for (int i = 0; i < nevszam; i++)
                 {
                     Console.WriteLine("Add meg a {0}. város nevét", i + 1);
                     szerepel = Console.ReadLine();
                     varosok.Add(szerepel);
                 }
+            }
         }
         public void getNevek()
         {
