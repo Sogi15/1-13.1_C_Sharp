@@ -121,6 +121,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HengerTeszt_unitTeszt", "He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binaris_unitteszt", "Binaris_unitteszt\Binaris_unitteszt.csproj", "{FFD46518-CF44-4067-BC6F-C18E0AF25E99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kettes_unitteszt", "Kettes_unitteszt\Kettes_unitteszt.csproj", "{519A13D2-818F-4BFD-9C3D-526A334A057F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -363,6 +365,10 @@ Global
 		{FFD46518-CF44-4067-BC6F-C18E0AF25E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFD46518-CF44-4067-BC6F-C18E0AF25E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFD46518-CF44-4067-BC6F-C18E0AF25E99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{519A13D2-818F-4BFD-9C3D-526A334A057F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{519A13D2-818F-4BFD-9C3D-526A334A057F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{519A13D2-818F-4BFD-9C3D-526A334A057F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{519A13D2-818F-4BFD-9C3D-526A334A057F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

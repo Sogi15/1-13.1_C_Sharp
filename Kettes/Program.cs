@@ -9,23 +9,25 @@ using System.Threading.Tasks;
 // Készítsünk programot, mely tetszőleges tízes számrendszerbeli egész számot átvált kettes számrendszerbe.
 namespace Kettes
 {
-    class Kszam
+    public class Kszam
     {
-        public Kszam() { }
-        public void kksz()
+        private string eredmeny = string.Empty;
+        private int bekeres = 0;
+
+        public Kszam(int bekeres) { this.bekeres = bekeres; }
+        public string kksz()
         {
-            string eredmeny;
-            Console.WriteLine("Írj be egy számot 10-es számrendszerben!");
-            int bekeres = int.Parse(Console.ReadLine());
-            eredmeny = Convert.ToString(bekeres, 2);
+            eredmeny = Convert.ToString(this.bekeres, 2);
             Console.WriteLine("Beírt szám kettes számrendszerben:\n{0}", eredmeny);
+            return eredmeny;
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Kszam megold = new Kszam();
+            Console.WriteLine("Írj be egy számot 10-es számrendszerben!");
+            Kszam megold = new Kszam(int.Parse(Console.ReadLine()));
             megold.kksz();
             Console.ReadKey();
         }
