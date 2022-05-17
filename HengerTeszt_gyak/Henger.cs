@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HengerTeszt_gyak
+namespace Henger
 {
-    class Henger
+    public class Hengert
     {
         public double magassag { get; set; }
         public double sugar { get; set; }
-        public Henger(double magassag, double sugar)
+        public Hengert(double magassag, double sugar)
         {
             this.magassag = magassag;
             this.sugar = sugar;
@@ -18,7 +18,7 @@ namespace HengerTeszt_gyak
 
         public double setSugar()
         {
-        Convert.ToDouble(Console.ReadLine());
+            Convert.ToDouble(Console.ReadLine());
             return this.sugar;
         }
         public double setMagas()
