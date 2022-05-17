@@ -119,6 +119,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Henger", "HengerTeszt_gyak\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HengerTeszt_unitTeszt", "HengerTeszt_unitTeszt\HengerTeszt_unitTeszt.csproj", "{222601EA-C2D5-41B6-9D8C-7121C2B712BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binaris_unitteszt", "Binaris_unitteszt\Binaris_unitteszt.csproj", "{FFD46518-CF44-4067-BC6F-C18E0AF25E99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -357,6 +359,10 @@ Global
 		{222601EA-C2D5-41B6-9D8C-7121C2B712BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{222601EA-C2D5-41B6-9D8C-7121C2B712BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{222601EA-C2D5-41B6-9D8C-7121C2B712BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFD46518-CF44-4067-BC6F-C18E0AF25E99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFD46518-CF44-4067-BC6F-C18E0AF25E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFD46518-CF44-4067-BC6F-C18E0AF25E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFD46518-CF44-4067-BC6F-C18E0AF25E99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

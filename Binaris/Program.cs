@@ -6,32 +6,34 @@ using System.Threading.Tasks;
 
 namespace Binaris
 {
-    class Bin
+    public class Bin
     {
 
-        private string bekeres = "";
+        private string bekeres = string.Empty;
         private int db = 0;
-
-        public Bin() { }
-        public void megoldas()
+        public Bin(string bekeres)
         {
-            Console.WriteLine("Írj be egy bináris számsorozatot! (pld: 0101)");
-            bekeres = Console.ReadLine();
-            for (int i = 0; i < bekeres.Length; i++)
+            this.bekeres = bekeres;
+        }
+        public int megoldas()
+        {
+            for (int i = 0; i < this.bekeres.Length; i++)
             {
-                if (bekeres[i] == '1')
+                if (this.bekeres[i] == '1')
                 {
                     db += 1;
                 }
             }
             Console.WriteLine("{0}db 1-es található a bináris számban amit beírtál!", db);
+            return db;
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Bin megold = new Bin();
+            Console.WriteLine("Írj be egy bináris számsorozatot! (pld: 0101)");
+            Bin megold = new Bin(Console.ReadLine());
             megold.megoldas();
             Console.ReadKey();
         }
