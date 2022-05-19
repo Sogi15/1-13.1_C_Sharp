@@ -10,7 +10,7 @@ namespace Oszthat
     {
         private int beszam = 0;
         private bool helyes = false; //ha int-et írunk be akkor false
-        public Osztogep() {}
+        public Osztogep(int beszam) { this.beszam = beszam; }
         public int setSzam()
         {
             do
@@ -18,7 +18,7 @@ namespace Oszthat
                 try
                 {
                     Console.WriteLine("Írj be egy számot!");
-                    beszam = int.Parse(Console.ReadLine());
+                    this.beszam = int.Parse(Console.ReadLine());
                     helyes = false;
                 }
                 catch (Exception e)
@@ -29,21 +29,21 @@ namespace Oszthat
             } while(helyes);
                 return this.beszam;
         }
-        public void getSzam()
+        public string getSzam()
         {
             string ert = string.Empty;
-            if (beszam % 3 == 0)
-            { ert = "Három"; }
-            if (beszam % 5 == 0) { ert = "Öt"; }
+            if (this.beszam % 3 == 0) { ert = "Három"; if (this.beszam % 5 == 0 && this.beszam % 3 == 0) { ert = "Három | Öt"; } }
+            else if (this.beszam % 5 == 0) { ert = "Öt"; }
             else {ert = Convert.ToString(beszam); }
             Console.WriteLine(ert);
+            return ert;
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
-            Osztogep megold = new Osztogep();
+            Osztogep megold = new Osztogep(0);
             megold.setSzam();
             megold.getSzam();
             Console.ReadKey();
