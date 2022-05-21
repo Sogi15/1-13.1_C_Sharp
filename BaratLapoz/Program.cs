@@ -119,12 +119,7 @@ namespace BaratLapoz
                     tovabb = tovabb - 1;
                 }
                 else { Console.Clear(); continue; }
-            } while (tovabb > -1 && tovabb < 5);
-            if (tovabb < 0 || tovabb > 5)
-            {
-                Console.WriteLine("A könyvet bezártad a program kilép!");
-            }
-
+            } while (tovabb > -1 && tovabb < 5); // Ha a tovább kisebb mint 0 vagy nagyonbb mint 4 akkor a program kilép
         }
     }
 
