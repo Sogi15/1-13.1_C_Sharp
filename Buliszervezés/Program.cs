@@ -70,10 +70,14 @@ namespace Buliszervezés
                 key.printBarat();
             }
             Console.WriteLine();
-            Console.WriteLine("20 évnél idősebb barátaink akiket meghívhatunk bulizni, mert 5-ös vagy nagyobb a bulizási hajlamuk");
+            Console.WriteLine("A buliba meghívható barátaink neve:");
             foreach (BLapoz key in Blist20)
             {
-                Console.WriteLine("{0,-20}", key.nev);
+                if (Blist20.Count >= 10)
+                {
+                    Console.WriteLine("{0,-20}", key.nev);
+                }
+                else { Console.WriteLine("Sajnos 10 fő kell a buli szervezéséhez"); }
             }
         }
         }
