@@ -30,7 +30,7 @@ namespace BaratLapoz
 
         public void printBarat()
         {
-            Console.WriteLine("{0,-20} {1,-10} {2,1} {3}", nev, szuletes.ToShortDateString(), nem, buli);
+            Console.WriteLine("{0,-20} {1,-10} {2,1} {3}", this.nev, this.szuletes.ToShortDateString(), this.nem, this.buli);
         }
         private List<BLapoz> baratLista = new List<BLapoz>(); // Ebben tároljuk a barát dokumentumot + lista létrehozás
         public void bekeres()
@@ -51,32 +51,80 @@ namespace BaratLapoz
                         DateTime.Parse(mezo[1]),
                         char.Parse(mezo[2]),
                         int.Parse(mezo[3])));
-
-                    var valtozo = mezo[0] + " " + mezo[1] + " " + mezo[2] + " " + mezo[3];
-                        for (int i = 0; i < 1; i++)
-                        {
-                            if (int.Parse(mezo[3]) <= 20)
-                            {
-                                Console.WriteLine(valtozo);
-                            }
-                        }
-                        for (int i = 0; i < 1; i++)
-                        {
-                            if (int.Parse(mezo[3]) > 20 && int.Parse(mezo[3]) <= 40)
-                            {
-                                Console.WriteLine(valtozo);
-                            }
-                        }
                 }
         }
         public void Kiir()
         {
+            var page1= baratLista.GetRange(0,20);
+            var page2 = baratLista.GetRange(20,20);
+            var page3 = baratLista.GetRange(40, 20);
+            var page4 = baratLista.GetRange(60, 20);
+            var page5 = baratLista.GetRange(80, 20);
+            do
+            {
+                if (tovabb == 0)
+                {
+                    foreach (BLapoz key in page1)
+                    {
+                        key.printBarat();
+                    }
+                }
+                else if (tovabb == 1)
+                {
+                    foreach (BLapoz key in page2)
+                    {
+                        key.printBarat();
+                    }
+                }
+                else if (tovabb == 2)
+                {
+                    foreach (BLapoz key in page3)
+                    {
+                        key.printBarat();
+                    }
+                }
+                else if (tovabb == 3)
+                {
+                    foreach (BLapoz key in page4)
+                    {
+                        key.printBarat();
+                    }
+                }
+                else if (tovabb == 4)
+                {
+                    foreach (BLapoz key in page5)
+                    {
+                        key.printBarat();
+                    }
+                }
+                var gomb = Console.ReadKey(true);
+                if (gomb.Key == ConsoleKey.PageUp)
+                {
+                    Console.Clear();
+                   tovabb = tovabb + 1;
+                }
+                else if (gomb.Key == ConsoleKey.Home)
+                {
+                    Console.Clear();
+                    tovabb = 0;
+                }
+                else if (gomb.Key == ConsoleKey.End)
+                {
+                    Console.Clear();
+                    tovabb = 4;
+                }
+                else if (gomb.Key == ConsoleKey.PageDown)
+                {
+                    Console.Clear();
+                    tovabb = tovabb - 1;
+                }
+                else { Console.Clear(); continue; }
+            } while (tovabb > -1 && tovabb < 5);
+            if (tovabb < 0 || tovabb > 5)
+            {
+                Console.WriteLine("A könyvet bezártad a program kilép!");
+            }
 
-            //foreach (BLapoz key in baratLista)
-            //{
-            //        key.printBarat();
-            //}
-            Console.ReadKey();
         }
     }
     class Program
@@ -86,7 +134,6 @@ namespace BaratLapoz
             BLapoz bl = new BLapoz();
             bl.bekeres();
             bl.Kiir();
-            Console.ReadKey();
         }
     }
 }
