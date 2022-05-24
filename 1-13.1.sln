@@ -137,6 +137,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Buliszervezés", "Buliszerv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuliszervezesB", "BuliszervezesB\BuliszervezesB.csproj", "{749BB2C2-5351-4EFB-BEF4-DDFBCFD492EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElsoForms", "ElsoForms\ElsoForms.csproj", "{99FFC817-24BA-48BB-9983-8BEF60BAF905}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -411,6 +413,10 @@ Global
 		{749BB2C2-5351-4EFB-BEF4-DDFBCFD492EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{749BB2C2-5351-4EFB-BEF4-DDFBCFD492EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{749BB2C2-5351-4EFB-BEF4-DDFBCFD492EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99FFC817-24BA-48BB-9983-8BEF60BAF905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99FFC817-24BA-48BB-9983-8BEF60BAF905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99FFC817-24BA-48BB-9983-8BEF60BAF905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99FFC817-24BA-48BB-9983-8BEF60BAF905}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
