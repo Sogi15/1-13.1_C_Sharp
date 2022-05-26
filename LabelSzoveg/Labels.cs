@@ -44,7 +44,6 @@ namespace LabelSzoveg
                 case 6: lbl_full.TextAlign = ContentAlignment.BottomLeft; break;
                 case 7: lbl_full.TextAlign = ContentAlignment.BottomCenter; break;
                 case 8: lbl_full.TextAlign = ContentAlignment.BottomRight; break;
-
             }
         }
     }
