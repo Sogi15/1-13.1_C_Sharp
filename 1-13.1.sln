@@ -139,6 +139,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuliszervezesB", "Buliszerv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElsoForms", "ElsoForms\ElsoForms.csproj", "{99FFC817-24BA-48BB-9983-8BEF60BAF905}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormJump", "FormJump\FormJump.csproj", "{ACAF8C6E-7497-42A4-8E76-CF478673EC8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabelSzoveg", "LabelSzoveg\LabelSzoveg.csproj", "{76775601-3E30-4F48-B7C2-8DD0CAF187E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -417,6 +421,14 @@ Global
 		{99FFC817-24BA-48BB-9983-8BEF60BAF905}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99FFC817-24BA-48BB-9983-8BEF60BAF905}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99FFC817-24BA-48BB-9983-8BEF60BAF905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACAF8C6E-7497-42A4-8E76-CF478673EC8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACAF8C6E-7497-42A4-8E76-CF478673EC8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACAF8C6E-7497-42A4-8E76-CF478673EC8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACAF8C6E-7497-42A4-8E76-CF478673EC8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76775601-3E30-4F48-B7C2-8DD0CAF187E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76775601-3E30-4F48-B7C2-8DD0CAF187E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76775601-3E30-4F48-B7C2-8DD0CAF187E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76775601-3E30-4F48-B7C2-8DD0CAF187E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
