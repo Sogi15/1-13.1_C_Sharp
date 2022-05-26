@@ -31,6 +31,7 @@ lbl_full.Text = "Kattints a képernyőn valahova";
         {
             // Hanyadik oszlopba kattintottunk
             int o = (int)e.X / (lbl_full.Width / 3);
+            // Hanyadik sorba kattintottunk
             int s = (int)e.Y / (lbl_full.Height / 3);
         }
     }
