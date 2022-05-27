@@ -149,6 +149,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KalkulatorUt", "KalkulatorU
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KalkulatorUt_Unitteszt", "KalkulatorUt_Unitteszt\KalkulatorUt_Unitteszt.csproj", "{5597077D-DC67-4145-B005-13763E4BDDEC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinMaxUt", "MinMaxUt\MinMaxUt.csproj", "{00B478F6-E041-4F01-9C8C-412E1FC3405B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinMaxUt_Unitteszt", "MinMaxUt_Unitteszt\MinMaxUt_Unitteszt.csproj", "{9DE3E761-D918-4D5C-A370-437C86593B01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -447,6 +451,14 @@ Global
 		{5597077D-DC67-4145-B005-13763E4BDDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5597077D-DC67-4145-B005-13763E4BDDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5597077D-DC67-4145-B005-13763E4BDDEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00B478F6-E041-4F01-9C8C-412E1FC3405B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00B478F6-E041-4F01-9C8C-412E1FC3405B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00B478F6-E041-4F01-9C8C-412E1FC3405B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00B478F6-E041-4F01-9C8C-412E1FC3405B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DE3E761-D918-4D5C-A370-437C86593B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE3E761-D918-4D5C-A370-437C86593B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE3E761-D918-4D5C-A370-437C86593B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE3E761-D918-4D5C-A370-437C86593B01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
