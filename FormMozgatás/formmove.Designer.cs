@@ -39,8 +39,8 @@ namespace FormMozgatás
             this.btn_teljesjobb = new System.Windows.Forms.Button();
             this.btn_bal = new System.Windows.Forms.Button();
             this.gb_meret = new System.Windows.Forms.GroupBox();
-            this.btn_tno = new System.Windows.Forms.Button();
             this.btn_tcsokk = new System.Windows.Forms.Button();
+            this.btn_tno = new System.Windows.Forms.Button();
             this.gb_transparent = new System.Windows.Forms.GroupBox();
             this.btn_bcsokk = new System.Windows.Forms.Button();
             this.btn_bnov = new System.Windows.Forms.Button();
@@ -58,6 +58,7 @@ namespace FormMozgatás
             this.btn_kozep.TabIndex = 0;
             this.btn_kozep.Text = "Közép";
             this.btn_kozep.UseVisualStyleBackColor = false;
+            this.btn_kozep.Click += new System.EventHandler(this.btn_kozep_Click);
             // 
             // btn_fel
             // 
@@ -70,6 +71,7 @@ namespace FormMozgatás
             this.btn_fel.Text = "Fel";
             this.btn_fel.UseMnemonic = false;
             this.btn_fel.UseVisualStyleBackColor = false;
+            this.btn_fel.Click += new System.EventHandler(this.btn_fel_Click);
             // 
             // btn_teljesfel
             // 
@@ -82,6 +84,7 @@ namespace FormMozgatás
             this.btn_teljesfel.Text = "Teljesen";
             this.btn_teljesfel.UseMnemonic = false;
             this.btn_teljesfel.UseVisualStyleBackColor = false;
+            this.btn_teljesfel.Click += new System.EventHandler(this.btn_teljesfel_Click);
             // 
             // btn_le
             // 
@@ -93,6 +96,7 @@ namespace FormMozgatás
             this.btn_le.TabIndex = 3;
             this.btn_le.Text = "Le";
             this.btn_le.UseVisualStyleBackColor = false;
+            this.btn_le.Click += new System.EventHandler(this.btn_le_Click);
             // 
             // btn_teljesle
             // 
@@ -104,6 +108,7 @@ namespace FormMozgatás
             this.btn_teljesle.TabIndex = 4;
             this.btn_teljesle.Text = "Teljesen";
             this.btn_teljesle.UseVisualStyleBackColor = false;
+            this.btn_teljesle.Click += new System.EventHandler(this.btn_teljesle_Click);
             // 
             // btn_jobb
             // 
@@ -115,6 +120,7 @@ namespace FormMozgatás
             this.btn_jobb.TabIndex = 5;
             this.btn_jobb.Text = "Jobbra";
             this.btn_jobb.UseVisualStyleBackColor = false;
+            this.btn_jobb.Click += new System.EventHandler(this.btn_jobb_Click);
             // 
             // btn_teljesbal
             // 
@@ -126,6 +132,7 @@ namespace FormMozgatás
             this.btn_teljesbal.TabIndex = 6;
             this.btn_teljesbal.Text = "Teljesen";
             this.btn_teljesbal.UseVisualStyleBackColor = false;
+            this.btn_teljesbal.Click += new System.EventHandler(this.btn_teljesbal_Click);
             // 
             // btn_teljesjobb
             // 
@@ -137,6 +144,7 @@ namespace FormMozgatás
             this.btn_teljesjobb.TabIndex = 6;
             this.btn_teljesjobb.Text = "Teljesen";
             this.btn_teljesjobb.UseVisualStyleBackColor = false;
+            this.btn_teljesjobb.Click += new System.EventHandler(this.btn_teljesjobb_Click);
             // 
             // btn_bal
             // 
@@ -148,6 +156,7 @@ namespace FormMozgatás
             this.btn_bal.TabIndex = 7;
             this.btn_bal.Text = "Balra";
             this.btn_bal.UseVisualStyleBackColor = false;
+            this.btn_bal.Click += new System.EventHandler(this.btn_bal_Click);
             // 
             // gb_meret
             // 
@@ -163,18 +172,6 @@ namespace FormMozgatás
             this.gb_meret.TabStop = false;
             this.gb_meret.Text = "Méret";
             // 
-            // btn_tno
-            // 
-            this.btn_tno.BackColor = System.Drawing.Color.Red;
-            this.btn_tno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_tno.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_tno.Location = new System.Drawing.Point(6, 31);
-            this.btn_tno.Name = "btn_tno";
-            this.btn_tno.Size = new System.Drawing.Size(100, 43);
-            this.btn_tno.TabIndex = 9;
-            this.btn_tno.Text = "Növekszik";
-            this.btn_tno.UseVisualStyleBackColor = false;
-            // 
             // btn_tcsokk
             // 
             this.btn_tcsokk.BackColor = System.Drawing.Color.Red;
@@ -186,6 +183,19 @@ namespace FormMozgatás
             this.btn_tcsokk.TabIndex = 10;
             this.btn_tcsokk.Text = "Csökken";
             this.btn_tcsokk.UseVisualStyleBackColor = false;
+            // 
+            // btn_tno
+            // 
+            this.btn_tno.BackColor = System.Drawing.Color.Red;
+            this.btn_tno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_tno.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_tno.Location = new System.Drawing.Point(6, 31);
+            this.btn_tno.Name = "btn_tno";
+            this.btn_tno.Size = new System.Drawing.Size(100, 43);
+            this.btn_tno.TabIndex = 9;
+            this.btn_tno.Text = "Növekszik";
+            this.btn_tno.UseVisualStyleBackColor = false;
+            this.btn_tno.Click += new System.EventHandler(this.btn_tno_Click);
             // 
             // gb_transparent
             // 
@@ -212,6 +222,7 @@ namespace FormMozgatás
             this.btn_bcsokk.TabIndex = 10;
             this.btn_bcsokk.Text = "Csökken";
             this.btn_bcsokk.UseVisualStyleBackColor = false;
+            this.btn_bcsokk.Click += new System.EventHandler(this.btn_bcsokk_Click);
             // 
             // btn_bnov
             // 
@@ -224,6 +235,7 @@ namespace FormMozgatás
             this.btn_bnov.TabIndex = 9;
             this.btn_bnov.Text = "Növekszik";
             this.btn_bnov.UseVisualStyleBackColor = false;
+            this.btn_bnov.Click += new System.EventHandler(this.btn_bnov_Click);
             // 
             // formmove
             // 
