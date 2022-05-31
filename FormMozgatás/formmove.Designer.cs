@@ -50,9 +50,10 @@ namespace FormMozgatás
             // 
             // btn_kozep
             // 
+            this.btn_kozep.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_kozep.BackColor = System.Drawing.Color.Lime;
             this.btn_kozep.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_kozep.Location = new System.Drawing.Point(323, 194);
+            this.btn_kozep.Location = new System.Drawing.Point(345, 207);
             this.btn_kozep.Name = "btn_kozep";
             this.btn_kozep.Size = new System.Drawing.Size(100, 30);
             this.btn_kozep.TabIndex = 0;
@@ -62,9 +63,10 @@ namespace FormMozgatás
             // 
             // btn_fel
             // 
+            this.btn_fel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_fel.BackColor = System.Drawing.Color.Yellow;
             this.btn_fel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_fel.Location = new System.Drawing.Point(323, 158);
+            this.btn_fel.Location = new System.Drawing.Point(345, 171);
             this.btn_fel.Name = "btn_fel";
             this.btn_fel.Size = new System.Drawing.Size(100, 30);
             this.btn_fel.TabIndex = 1;
@@ -75,9 +77,10 @@ namespace FormMozgatás
             // 
             // btn_teljesfel
             // 
+            this.btn_teljesfel.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_teljesfel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_teljesfel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_teljesfel.Location = new System.Drawing.Point(323, 122);
+            this.btn_teljesfel.Location = new System.Drawing.Point(345, 135);
             this.btn_teljesfel.Name = "btn_teljesfel";
             this.btn_teljesfel.Size = new System.Drawing.Size(100, 30);
             this.btn_teljesfel.TabIndex = 2;
@@ -88,9 +91,10 @@ namespace FormMozgatás
             // 
             // btn_le
             // 
+            this.btn_le.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_le.BackColor = System.Drawing.Color.Yellow;
             this.btn_le.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_le.Location = new System.Drawing.Point(323, 230);
+            this.btn_le.Location = new System.Drawing.Point(345, 243);
             this.btn_le.Name = "btn_le";
             this.btn_le.Size = new System.Drawing.Size(100, 30);
             this.btn_le.TabIndex = 3;
@@ -100,9 +104,10 @@ namespace FormMozgatás
             // 
             // btn_teljesle
             // 
+            this.btn_teljesle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_teljesle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_teljesle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_teljesle.Location = new System.Drawing.Point(323, 266);
+            this.btn_teljesle.Location = new System.Drawing.Point(345, 279);
             this.btn_teljesle.Name = "btn_teljesle";
             this.btn_teljesle.Size = new System.Drawing.Size(100, 30);
             this.btn_teljesle.TabIndex = 4;
@@ -112,9 +117,10 @@ namespace FormMozgatás
             // 
             // btn_jobb
             // 
+            this.btn_jobb.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_jobb.BackColor = System.Drawing.Color.Yellow;
             this.btn_jobb.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_jobb.Location = new System.Drawing.Point(429, 194);
+            this.btn_jobb.Location = new System.Drawing.Point(451, 207);
             this.btn_jobb.Name = "btn_jobb";
             this.btn_jobb.Size = new System.Drawing.Size(100, 30);
             this.btn_jobb.TabIndex = 5;
@@ -124,9 +130,10 @@ namespace FormMozgatás
             // 
             // btn_teljesbal
             // 
+            this.btn_teljesbal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_teljesbal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_teljesbal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_teljesbal.Location = new System.Drawing.Point(111, 194);
+            this.btn_teljesbal.Location = new System.Drawing.Point(133, 207);
             this.btn_teljesbal.Name = "btn_teljesbal";
             this.btn_teljesbal.Size = new System.Drawing.Size(100, 30);
             this.btn_teljesbal.TabIndex = 6;
@@ -136,9 +143,10 @@ namespace FormMozgatás
             // 
             // btn_teljesjobb
             // 
+            this.btn_teljesjobb.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_teljesjobb.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btn_teljesjobb.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_teljesjobb.Location = new System.Drawing.Point(535, 194);
+            this.btn_teljesjobb.Location = new System.Drawing.Point(557, 207);
             this.btn_teljesjobb.Name = "btn_teljesjobb";
             this.btn_teljesjobb.Size = new System.Drawing.Size(100, 30);
             this.btn_teljesjobb.TabIndex = 6;
@@ -148,9 +156,10 @@ namespace FormMozgatás
             // 
             // btn_bal
             // 
+            this.btn_bal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_bal.BackColor = System.Drawing.Color.Yellow;
             this.btn_bal.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btn_bal.Location = new System.Drawing.Point(217, 194);
+            this.btn_bal.Location = new System.Drawing.Point(239, 207);
             this.btn_bal.Name = "btn_bal";
             this.btn_bal.Size = new System.Drawing.Size(100, 30);
             this.btn_bal.TabIndex = 7;
@@ -160,12 +169,13 @@ namespace FormMozgatás
             // 
             // gb_meret
             // 
+            this.gb_meret.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gb_meret.BackColor = System.Drawing.Color.Maroon;
             this.gb_meret.Controls.Add(this.btn_tcsokk);
             this.gb_meret.Controls.Add(this.btn_tno);
             this.gb_meret.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.gb_meret.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.gb_meret.Location = new System.Drawing.Point(217, 36);
+            this.gb_meret.Location = new System.Drawing.Point(239, 49);
             this.gb_meret.Name = "gb_meret";
             this.gb_meret.Size = new System.Drawing.Size(312, 80);
             this.gb_meret.TabIndex = 8;
@@ -174,6 +184,7 @@ namespace FormMozgatás
             // 
             // btn_tcsokk
             // 
+            this.btn_tcsokk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_tcsokk.BackColor = System.Drawing.Color.Red;
             this.btn_tcsokk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btn_tcsokk.ForeColor = System.Drawing.SystemColors.Control;
@@ -187,6 +198,7 @@ namespace FormMozgatás
             // 
             // btn_tno
             // 
+            this.btn_tno.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_tno.BackColor = System.Drawing.Color.Red;
             this.btn_tno.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btn_tno.ForeColor = System.Drawing.SystemColors.Control;
@@ -200,12 +212,13 @@ namespace FormMozgatás
             // 
             // gb_transparent
             // 
+            this.gb_transparent.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gb_transparent.BackColor = System.Drawing.Color.Maroon;
             this.gb_transparent.Controls.Add(this.btn_bcsokk);
             this.gb_transparent.Controls.Add(this.btn_bnov);
             this.gb_transparent.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.gb_transparent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.gb_transparent.Location = new System.Drawing.Point(217, 302);
+            this.gb_transparent.Location = new System.Drawing.Point(239, 315);
             this.gb_transparent.Name = "gb_transparent";
             this.gb_transparent.Size = new System.Drawing.Size(312, 80);
             this.gb_transparent.TabIndex = 11;
@@ -214,6 +227,7 @@ namespace FormMozgatás
             // 
             // btn_bcsokk
             // 
+            this.btn_bcsokk.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_bcsokk.BackColor = System.Drawing.Color.Red;
             this.btn_bcsokk.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btn_bcsokk.ForeColor = System.Drawing.SystemColors.Control;
@@ -227,6 +241,7 @@ namespace FormMozgatás
             // 
             // btn_bnov
             // 
+            this.btn_bnov.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_bnov.BackColor = System.Drawing.Color.Red;
             this.btn_bnov.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btn_bnov.ForeColor = System.Drawing.SystemColors.Control;

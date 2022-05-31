@@ -105,7 +105,7 @@ namespace FormMozgatás
 
         private void btn_tcsokk_Click(object sender, EventArgs e)
         {
-            if (Width > 300 && Height > 300)
+            if (Width > 420 && Height > 420)
             {
                 CenterToScreen();
                 Width -= meretezo;
