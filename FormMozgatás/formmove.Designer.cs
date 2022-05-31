@@ -183,6 +183,7 @@ namespace FormMozgatás
             this.btn_tcsokk.TabIndex = 10;
             this.btn_tcsokk.Text = "Csökken";
             this.btn_tcsokk.UseVisualStyleBackColor = false;
+            this.btn_tcsokk.Click += new System.EventHandler(this.btn_tcsokk_Click);
             // 
             // btn_tno
             // 

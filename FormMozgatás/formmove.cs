@@ -20,6 +20,7 @@ namespace FormMozgatás
 
         private void formmove_Load(object sender, EventArgs e)
         {
+            CenterToScreen();
 
         }
 
@@ -57,8 +58,7 @@ namespace FormMozgatás
 
         private void btn_kozep_Click(object sender, EventArgs e)
         {
-            Top = (Screen.PrimaryScreen.Bounds.Height - Height) /2;
-            Left = (Screen.PrimaryScreen.Bounds.Width - Width) / 2;
+            CenterToScreen();
         }
 
         private void btn_fel_Click(object sender, EventArgs e)
@@ -96,9 +96,21 @@ namespace FormMozgatás
         private void btn_tno_Click(object sender, EventArgs e)
         {
             if (Width < Screen.PrimaryScreen.Bounds.Width && Height < Screen.PrimaryScreen.Bounds.Height)
-                Top = 0; Left = 0;
-            Width += meretezo;
-            Height += meretezo;
+            {
+                CenterToScreen();
+                Width += meretezo;
+                Height += meretezo;
+            }
+        }
+
+        private void btn_tcsokk_Click(object sender, EventArgs e)
+        {
+            if (Width > 300 && Height > 300)
+            {
+                CenterToScreen();
+                Width -= meretezo;
+                Height -= meretezo;
+            }
         }
     }
 }
